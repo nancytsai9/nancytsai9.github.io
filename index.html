@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            padding-top: 30px;
+        }
+
+        .intro {
+            width: 90%;
+            height: 775px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* z-index: 1; */
+            margin-top: 20px;
+            background-color: rgba(232, 246, 249, 0.926);
+            background: url('./imgs/world.jpg');
+            background-size: cover;
+        }
+
+        .introcontent {
+            width: 400px;
+            height: 600px;
+            /* border: 3px solid red; */
+            padding-top: 190px;
+            margin-right: 250px;
+            text-align: center;
+        }
+
+        .inspire {
+            width: 400px;
+            height: 600px;
+            /* border: 3px solid red; */
+            padding-top: 250px;
+            text-align: center;
+        }
+
+        nav {
+            width: 90%;
+            margin: auto;
+            position: sticky;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            right: 0;
+            /* background-color: rgb(244, 171, 194); */
+            background-color: rgba(63, 213, 239, 0.926);
+        }
+
+        .navbar {
+            background-color: white;
+        }
+
+        .logo {
+            width: 90px;
+        }
+
+        .nav-item {
+            font-size: 1.3rem;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .alldigital {
+            width: 90%;
+            height: 650px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* z-index: 1; */
+            margin-top: 20px;
+            background-color: rgba(232, 246, 249, 0.926);
+            background: url('./imgs/sky.jpg');
+        }
+
+        .allwork {
+            width: 90%;
+            height: 690px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* z-index: 1; */
+            margin-top: 20px;
+            background-color: rgba(232, 246, 249, 0.926);
+            background: url('./imgs/sea.jpg');
+        }
+
+        .work,
+        .digitalclass {
+            /* display: inline-block; */
+            width: 370px;
+            height: 300px;
+            /* border: 3px solid red; */
+            vertical-align: top;
+            padding-top: 30px;
+        }
+
+        .work img,
+        .digitalclass img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .button-container {
+            /* border: 3px solid red; */
+            display: inline;
+        }
+
+        .btn {
+            padding: 3px 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: white;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left: 155px;
+        }
+
+        .ad {
+            display: inline-block;
+            width: 340px;
+            height: 300px;
+            /* border: 3px solid red; */
+            vertical-align: top;
+            padding-top: 30px;
+
+        }
+
+        .ad img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+
+        }
+
+        .work1 {
+            display: inline-block;
+            width: 250px;
+            height: 300px;
+            /* border: 3px solid red; */
+            vertical-align: top;
+            padding-top: 30px;
+        }
+
+        .work1 img {
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+
+        .allabroad {
+            width: 90%;
+            height: 664px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            background: url('./imgs/mountain.jpg');
+            background-size: cover;
+        }
+
+        .abroad {
+            width: 300px;
+            height: 50%;
+            /* border: 3px solid red; */
+            padding-top: 30px;
+        }
+
+        .abroad img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .graduation {
+            width: 380px;
+            height: 335px;
+            /* border: 3px solid red; */
+            vertical-align: bottom;
+            padding-top: 30px;
+        }
+
+        .graduation img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        .allafterclass {
+            width: 90%;
+            height: 750px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            background-color: rgba(232, 246, 249, 0.926);
+            background: url('./imgs/view.jpg');
+            background-size: cover;
+        }
+
+        .afterclass {
+            width: 360px;
+            height: 390px;
+            /* border: 3px solid red; */
+            padding-top: 30px;
+
+        }
+
+        .afterclass img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .afterclass1 {
+            width: 360px;
+            height: 390px;
+            /* border: 3px solid red; */
+            padding-top: 30px;
+
+        }
+
+        .afterclass1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .button-container2 {
+            display: inline;
+        }
+
+        .btn2 {
+            padding: 3px 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: white;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        .btn3 {
+            padding: 3px 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: white;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left: 140px;
+        }
+
+        .btn4 {
+            padding: 3px 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: white;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-left: 115px;
+        }
+
+        #section2 {
+            width: 90%;
+            margin: auto;
+            margin-left: 5%;
+            /* border: 3px solid red; */
+            margin-top: 20px;
+        }
+
+        #section0,
+        #section1,
+        #section3,
+        #section4 {
+            width: 90%;
+            margin: auto;
+            margin-left: 5%;
+            /* border: 3px solid red; */
+            margin-top: 20px;
+        }
+
+        .alladvantage {
+            width: 90%;
+            height: 200px;
+            /* border: 3px solid red; */
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+        }
+
+        .box {
+            width: 27%;
+            height: 200px;
+            /* border: 3px solid red; */
+            margin-right: 26px;
+
+        }
+
+        .picbox img {
+
+            height: 110%;
+        }
+
+        .picbox {
+            width: 21%;
+            height: 200px;
+            /* border: 3px solid red; */
+        }
+
+        @media (max-width: 768px) {
+            .intro {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .introcontent {
+                width: 100%;
+                margin-right: 0;
+                padding-top: 120px;
+                /* padding-bottom: 30px; */
+            }
+
+            .inspire {
+                width: 100%;
+                padding-top: 30px;
+                /* padding-bottom: 30px; */
+            }
+
+            .alldigital,
+            .allwork,
+            .allabroad,
+            .allafterclass,
+            .alladvantage {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .digitalclass {
+                width: 100%;
+                margin-bottom: 330px;
+            }
+
+            .ad {
+                width: 100%;
+                margin-bottom: 270px;
+
+            }
+
+            .work {
+                width: 100%;
+                margin-bottom: 420px;
+            }
+
+            .work1 {
+                width: 100%;
+                margin-bottom: 290px;
+            }
+
+            .abroad {
+                width: 100%;
+                margin-bottom: 10px;
+
+            }
+
+
+
+            .graduation {
+                width: 100%;
+                margin-bottom: 390px;
+
+            }
+
+            .afterclass {
+                width: 100%;
+                margin-bottom: 310px;
+            }
+
+            .afterclass1 {
+                width: 100%;
+                margin-top: 55px;
+                margin-bottom: 360px;
+
+            }
+
+            .afterclass1 img {
+                object-fit: fill;
+            }
+        }
+
+        .box {
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: -20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="intro" id="section00">
+        <div class="introcontent">
+            <h5>我叫蔡毓甯
+                <br><br>
+                致力於往金融業行銷企劃領域發展
+                <br><br>
+                擁有行銷企劃與金融業經驗
+                <br><br>
+                能客群分析洞察消費者需求，企劃適合金融商品服務
+                <br><br>
+                與各部門溝通協調，分工合作完成目標。
+                <br><br><br>
+                聯絡資訊：
+                <br><br>
+                手機： 0939963137
+                <br><br>
+                E-mail: nancy851007@gmail.com
+            </h5>
+        </div>
+        <div class="inspire">
+            <h5>這世界有許多新知待學習
+                <br><br>
+                人外有人，天外有天
+                <br><br>
+                The stars don't shine, they burn.
+                <br><br>
+                成功的背後，是艱辛刻苦的奮鬥歷程
+                <br><br>
+                我堅定自己的信念、積極進取、充實自我<br><br>
+                即使徬徨、挫折也永不放棄。
+            </h5>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <img class='logo' src="./imgs/CARD2.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section00">關於我</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section0">數位轉型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section1">工作經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">在學經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">四大優勢</a>
+                    </li>
+                    <div class="col">
+                        <div class="social-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+            </div>
+    </nav>
+    <div id="section0">
+        <h3> 數位轉型</h3>
+    </div>
+
+    <div class="alldigital">
+        <div class="digitalclass"><img src="./imgs/mvc.png" alt="">
+            <br><br>
+            <h5>Fintech AI 金融與行銷大數據養成班</h5>
+            <p>我參與112/03/30～112/06/14 每日9:00至17:00課程，學習HTML, CSS, JavaScript製作網頁、Python、Mysql、Line
+                bot、智能合約與區塊鏈等課程，此外，我擔任組長，與四位組員一起完成金融功能開發專題，我負責主持每次報告討論、規劃時程進度、發想策略及規劃功能流程，並用Python、HTML、CSS寫功能、連線資料庫Mysql、串連Line
+                bot呈現。
+            </p>
+            </p>
+        </div>
+        <div class="ad">
+            <img src="./imgs/ad.png" alt="">
+            <br><br>
+            <h5 class="inline">數位廣告投放分析師培訓</h5>
+            <div class="button-container"><button class="btn2"> <a
+                        href="https://drive.google.com/file/d/10eW7vpv2gdggH6pK4G7nQZa60lREBrAb/view?usp=sharing"
+                        target="_blank">前往作品</a>
+                </button></div>
+            <p>我已修習約21小時FB、Google Ads廣告投放課程，學習投放廣告方法、受眾選擇、廣告內容撰寫、數據分析、優化廣告、投放廣告應注意事項等技能，並實務投放FB、Google Ads廣告，成效優於平均水準。
+            </p>
+        </div>
+        <div class=ad>
+            <img src="./imgs/google.png" alt="">
+            <br><br>
+            <h5>Google Analytics & Google Ads ＆ 基礎數位行銷認證</h5>
+            <p>我已取得Google Analytics, Google Ads-搜尋廣告、多媒體廣告、評估、基礎數位行銷認證，學習如何用Google Analytics數據分析，發掘問題及機會點、Google
+                Ads觸及受眾、增加品牌知名度或流量、分析廣告成效並優化。
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <div id="section1">
+        <h3> 工作經歷</h3>
+    </div>
+    <div class="allwork">
+        <div class="work"><img src="./imgs/下載1.jpeg" alt="">
+            <br><br>
+            <h5>金融服務人員</h5>
+            <p>我對銀行的商品服務及營運有全面性的了解，如數位金融、金融商品，結合企劃思維，我會將不同年齡層、特性顧客分群，提供相應的服務，針對年輕人，教導他們使用數位帳戶、行動銀行，此外，第一線接觸顧客，了解到問題及機會點，針對喜歡做定存的顧客，可知偏保守型，我會用不同觀點切入跟顧客介紹其他金融商品如保險。我的行銷轉介數近平均數兩到三倍，積極於為分行帶來貢獻。
+            </p>
+        </div>
+        <div class="work">
+            <img src="./imgs/THL-logo.jpg" alt="">
+            <br><br>
+            <h5 class="inline">品牌企劃助理</h5>
+            <div class="button-container"><button class="btn3"> <a
+                        href="https://24h.pchome.com.tw/prod/DBAJ04-A80471431?gclid=CjwKCAjwvJyjBhApEiwAWz2nLR9UdKr7wWG56-n1X-TRqGNkPyfoWmwh9uX1-rQ89_XmQq8pbE2OaBoCnpEQAvD_BwE"
+                        target="_blank">前往作品</a>
+                </button></div>
+            <p>我負責Nestle
+                Sanpellegrino、Acqua
+                Panna品牌，需業績分析及製作報表、異業合作、行銷活動執行、通路管理，我擁有專案管理能力，針對問題發想解決方案和執行章程，整合不同部門完成目標，此外，掌控時程使各部門運作順利、將有限的資源做最適的配置及數據分析隨時調整策略，也曾企劃電子商務產品文案，撰寫產品文案、圖片排版，目前被使用於PChome。
+            </p>
+
+
+        </div>
+        <div class=work1>
+            <img src="./imgs/下載.png" alt="">
+            <br><br>
+            <h5>營運企劃</h5>
+
+            <p>負責發想起司櫃行銷策略及執行，依據顧客需求，提供客製化的起司拼盤、保握客流量多時，舉辦起司試吃活動，與超市不同商品搭售，例如：週年慶推出生菜沙拉送起士活動，透過多元行銷，提升超市業績。
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <div id="section2">
+        <h3> 在學經歷</h3>
+        <h4>學歷：國際企業英語學位學程</h4>
+    </div>
+    <div class="allabroad">
+
+        <div class="abroad"><img src="./imgs/IMG_4282拷貝.png" alt="">
+            <br><br>
+            <h5>美國Juniata College短期遊學</h5>
+            <p>我學會勇敢表達自己的想法，不會因為怕犯錯，就不嘗試，此次經驗也是我的人生轉捩點，我對於這個世界充滿好奇，也了解人外有人天外有天，我變得更勇敢積極實踐想做的事，學習新知，充實自己。</p>
+        </div>
+        <div class="abroad">
+
+            <img src="./imgs/IMG_4819拷貝.png" alt="">
+            <br><br>
+            <h5>泰國企業參訪</h5>
+            <p>我了解到不同背景的人，不同的做事方式、價值觀，激發自己多元思考，像是與當地學生聊到學習英文這件事，我領悟到學英文不該學得很有壓力，不僅僅是考多益、補習班進修，也可透過舉辦娛樂性語言交流活動增進英文能力，讓學英文也可以很有趣。
+            </p>
+        </div>
+        <div class=graduation>
+            <img src="./imgs/IMG_2476拷貝.png" alt="">
+            <br><br>
+            <h5>畢業專題</h5>
+            <p>設計思考畢業專題榮獲第二名佳績，我擔任領導人的角色，主持每次報告討論，整合不同意見、規劃各個時程進度目標如實完成、並凝聚團隊向心力，像是我觀察到有位組員常心不在焉，我會私下與他討論，讓他意識到畢業專題的重要性，我也會深入思考報告可精進的地方，並給予團員建議，與三位組員分工合作，順利完成畢業專題。
+            </p>
+        </div>
+
+    </div>
+
+    <div class="allafterclass">
+        <div class="afterclass"><img src="./imgs/IMG_9869拷貝.JPG" alt="">
+            <br><br>
+            <h5 class="inline"> 活動企劃師培訓</h5>
+            <div class="button-container"><button class="btn4"> <a
+                        href="https://drive.google.com/file/d/19x0jtWDrJjpIcPNfoF4R9iblaVOU-3gC/view?usp=sharing"
+                        target="_blank">前往作品</a></button></div>
+
+            <p>我參與38小時培訓，成果競賽中，與十位組員一起完成的活動企劃書獲得金獎名次，在小組中，擔任協調者的角色，整合大家分歧的意見，並負責撰寫活動核心概念與主題規劃，培訓後，我主動考取CCAPP活動企劃師證照。
+            </p>
+
+        </div>
+        <div class="afterclass">
+
+            <img src="./imgs/IMG_7825拷貝.png" alt="">
+            <br><br>
+            <h5>基層文化服務社團</h5>
+            <p>我們社團會到國小舉辦營隊，從拉贊助、課程企劃、場地佈置到活動執行皆需負責，最令我收穫的是學習自己不擅長的事，並從挫折中成長，曾經需要演戲，剛開始總是表現不好，但我不會因為挫折就放棄，我會請教同學、私下努力練習，經過不斷努力，最後順利演完戲，不論是生活或工作中，我總是勇敢踏出舒適圈，克服困難。
+            </p>
+        </div>
+        <div class=afterclass1>
+            <img src="./imgs/excel.png" alt="">
+            <br><br>
+            <h5>Excel、平面設計、說話溝通進修</h5>
+            <p>為了精進行銷相關技能，我利用課餘時間主動進修說話溝通，並主動擔任成果發表會主持人一職，順利完成活動主持，還修習平面設計Photoshop、Illustrator，我會簡單製圖、圖片排版，此外，進修Excel課程，運用函數公式製作每月業績報表和統整收集的資料，提升工作效率。
+            </p>
+
+        </div>
+    </div>
+    <div id="section3">
+        <h3>四大優勢</h3>
+    </div>
+    <div class="alladvantage">
+        <div class="picbox"> <img src="./imgs/logical.png" alt=""> </div>
+        <div class="box">
+            <p> 邏輯思考<br>針對問題思考及分析資料，解決問題，例如:在決定促銷品項、價格時，我會考量品牌定位、庫存量、未來到貨量、通路各品項銷售額等因素，決定促銷品項 及價格。</p>
+
+        </div>
+        <div class="picbox"> <img src="./imgs/teamwork.png" alt=""> </div>
+        <div class="box">
+            <p>
+                團隊合作 <br>我擁有豐富團隊合作經驗，並擔任領導、協調的角色，凝聚團隊向心力，有效分工合作完成目標。</p>
+        </div>
+    </div>
+    <div class="alladvantage">
+        <div class="picbox"> <img src="./imgs/observe.png" alt=""> </div>
+        <div class="box">
+            <p>
+                洞察力 <br>
+                喜歡與不同背景人交流，我學會用不同角度去思考和同理心看待人事物，因此，我會換位思考，發掘顧客的痛點及潛在商機。</p>
+        </div>
+        <div class="picbox"> <img src="./imgs/study.png" alt=""> </div>
+        <div class="box">
+            <p>
+                求知慾 <br>
+                我參與國際交流活動擴展視野，進修平面設計、Excel、說話溝通精進行銷技能，參與數位廣告投放培訓、Fintech AI金融與行銷大數據養成班因應數位轉型，不斷精進自我能力。</p>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
