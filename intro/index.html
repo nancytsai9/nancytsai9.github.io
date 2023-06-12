@@ -146,8 +146,7 @@
             margin-left: 155px;
         }
 
-        .ad1,
-        .ad2 {
+        .ad {
             display: inline-block;
             width: 340px;
             height: 300px;
@@ -157,8 +156,7 @@
 
         }
 
-        .ad1 img,
-        .ad2 img {
+        .ad img {
             width: 100%;
             height: 100%;
             object-fit: fill;
@@ -268,7 +266,17 @@
         .button-container2 {
             display: inline;
         }
-
+        .btn1 {
+            padding: 3px 10px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            background-color: white;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+            /* margin-left: 15px; */
+        }
         .btn2 {
             padding: 3px 10px;
             border: 1px solid #000;
@@ -355,14 +363,10 @@
             /* border: 3px solid red; */
         }
 
-        span {
-            color: rgba(255, 102, 0, 0.873);
-        }
-
         @media (max-width: 768px) {
             .intro {
                 flex-direction: column;
-                height: 930px;
+                height: auto;
             }
 
             .introcontent {
@@ -389,29 +393,23 @@
 
             .digitalclass {
                 width: 100%;
-                margin-bottom: 350px;
+                margin-bottom: 330px;
             }
 
-            .ad1 {
+            .ad {
                 width: 100%;
-                margin-bottom: 260px;
-
-            }
-
-            .ad2 {
-                width: 100%;
-                margin-bottom: 310px;
+                margin-bottom: 270px;
 
             }
 
             .work {
                 width: 100%;
-                margin-bottom: 360px;
+                margin-bottom: 420px;
             }
 
             .work1 {
                 width: 100%;
-                margin-bottom: 280px;
+                margin-bottom: 290px;
             }
 
             .abroad {
@@ -419,7 +417,6 @@
                 margin-bottom: 10px;
 
             }
-
 
 
             .graduation {
@@ -531,13 +528,16 @@
         <div class="digitalclass"><img src="./imgs/mvc.png" alt="">
             <br><br>
             <h5>Fintech AI 金融與行銷大數據養成班</h5>
-            <p>我參與112/03/30～112/06/14 每日9:00至17:00課程，學習HTML, CSS, JavaScript製作網頁、Python、Mysql、Line
-                bot、智能合約與區塊鏈等課程，此外，我擔任組長，與四位組員一起完成金融功能開發專題，我負責主持每次報告討論、規劃時程進度、發想策略及規劃功能流程，並用Python、HTML、CSS寫功能、連線資料庫Mysql、串連Line
+            <div class="button-container"><button class="btn1"> <a
+                href="https://docs.google.com/presentation/d/1fN_cVFkeHZR-pLnBFJsJcyMyGOa2buyr/edit?usp=sharing&ouid=114585953473635022616&rtpof=true&sd=true"
+                target="_blank">前往作品</a>
+        </button></div>
+            <p>我參與357小時課程，學習HTML, CSS, JavaScript製作網頁、Python、Mysql、區塊鏈、AI等課程，此外，我擔任組長，與四位組員一起完成金融功能開發專題，我負責主持每次報告討論、規劃時程進度、發想策略及規劃功能流程，並用Python、HTML、CSS寫功能、連線資料庫Mysql、串連Line
                 bot呈現。
             </p>
             </p>
         </div>
-        <div class="ad1">
+        <div class="ad">
             <img src="./imgs/ad.png" alt="">
             <br><br>
             <h5 class="inline">數位廣告投放分析師培訓</h5>
@@ -548,7 +548,7 @@
             <p>我已修習約21小時FB、Google Ads廣告投放課程，學習投放廣告方法、受眾選擇、廣告內容撰寫、數據分析、優化廣告、投放廣告應注意事項等技能，並實務投放FB、Google Ads廣告，成效優於平均水準。
             </p>
         </div>
-        <div class=ad2>
+        <div class=ad>
             <img src="./imgs/google.png" alt="">
             <br><br>
             <h5>Google Analytics & Google Ads ＆ 基礎數位行銷認證</h5>
@@ -581,7 +581,6 @@
                 Sanpellegrino、Acqua
                 Panna品牌，需業績分析及製作報表、異業合作、行銷活動執行、通路管理，我擁有專案管理能力，針對問題發想解決方案和執行章程，整合不同部門完成目標，此外，掌控時程使各部門運作順利、將有限的資源做最適的配置及數據分析隨時調整策略，也曾企劃電子商務產品文案，撰寫產品文案、圖片排版，目前被使用於PChome。
             </p>
-
 
         </div>
         <div class=work1>
@@ -659,33 +658,27 @@
     <div class="alladvantage">
         <div class="picbox"> <img src="./imgs/logical.png" alt=""> </div>
         <div class="box">
-            <p> <span>邏輯思考</span>
-                <br>針對問題思考及分析資料，解決問題，例如:在決定促銷品項、價格時，我會考量品牌定位、庫存量、未來到貨量、通路各品項銷售額等因素，決定促銷品項 及價格。
-            </p>
+            <p> 邏輯思考<br>針對問題思考及分析資料，解決問題，例如:在決定促銷品項、價格時，我會考量品牌定位、庫存量、未來到貨量、通路各品項銷售額等因素，決定促銷品項 及價格。</p>
 
         </div>
         <div class="picbox"> <img src="./imgs/teamwork.png" alt=""> </div>
         <div class="box">
-            <p> <span> 團隊合作</span>
-                <br>我擁有豐富團隊合作經驗，並擔任領導、協調的角色，凝聚團隊向心力，有效分工合作完成目標。
-            </p>
+            <p>
+                團隊合作 <br>我擁有豐富團隊合作經驗，並擔任領導、協調的角色，凝聚團隊向心力，有效分工合作完成目標。</p>
         </div>
     </div>
     <div class="alladvantage">
         <div class="picbox"> <img src="./imgs/observe.png" alt=""> </div>
         <div class="box">
-            <p><span>洞察力</span>
-                <br>
-                喜歡與不同背景人交流，我學會用不同角度去思考和同理心看待人事物，因此，我會換位思考，發掘顧客的痛點及潛在商機。
-            </p>
+            <p>
+                洞察力 <br>
+                喜歡與不同背景人交流，我學會用不同角度去思考和同理心看待人事物，因此，我會換位思考，發掘顧客的痛點及潛在商機。</p>
         </div>
         <div class="picbox"> <img src="./imgs/study.png" alt=""> </div>
         <div class="box">
             <p>
-                <span>求知慾</span>
-                <br>
-                我參與國際交流活動擴展視野，進修平面設計、Excel、說話溝通精進行銷技能，參與數位廣告投放培訓、Fintech AI金融與行銷大數據養成班因應數位轉型，不斷精進自我能力。
-            </p>
+                求知慾 <br>
+                我參與國際交流活動擴展視野，進修平面設計、Excel、說話溝通精進行銷技能，參與數位廣告投放培訓、Fintech AI金融與行銷大數據養成班因應數位轉型，不斷精進自我能力。</p>
         </div>
     </div>
     </div>
@@ -693,3 +686,4 @@
 </body>
 
 </html>
+
