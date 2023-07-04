@@ -87,6 +87,7 @@
             /* border: 3px solid red; */
             margin: auto;
             display: flex;
+            /* display: inline-block; */
             flex-direction: row;
             justify-content: space-evenly;
             /* z-index: 1; */
@@ -109,15 +110,17 @@
             background: url('./imgs/sea.jpg');
         }
 
-        .work,
+        
+     .work,
         .digitalclass {
-            /* display: inline-block; */
-            width: 370px;
-            height: 300px;
-            /* border: 3px solid red; */
-            vertical-align: top;
-            padding-top: 30px;
-        }
+        /* display: inline-block; */
+        width: 370px;
+        height: 300px; 
+         /* border: 3px solid red;  */
+         vertical-align: top;
+        padding-top: 30px;
+        } 
+
 
         .work img,
         .digitalclass img {
@@ -275,7 +278,7 @@
             color: #000;
             font-size: 1.2rem;
             font-weight: bold;
-            /* margin-left: 15px; */
+            margin-left: 155px;
         }
         .btn2 {
             padding: 3px 10px;
@@ -287,6 +290,7 @@
             font-size: 1.2rem;
             font-weight: bold;
             margin-left: 15px;
+
         }
 
         .btn3 {
@@ -399,6 +403,11 @@
             .ad {
                 width: 100%;
                 margin-bottom: 270px;
+
+            }
+            #ad1 {
+                width: 100%;
+                margin-bottom: 300px;
 
             }
 
@@ -527,13 +536,12 @@
     <div class="alldigital">
         <div class="digitalclass"><img src="./imgs/mvc.png" alt="">
             <br><br>
-            <h5>Fintech AI 金融與行銷大數據養成班</h5>
-            <div class="button-container"><button class="btn1"> <a
+            <h5 style="display: inline;">Fintech培訓</h5>
+            <div class="button-container" style="display:inline;"><button class="btn1"> <a
                 href="https://www.canva.com/design/DAFlfg8t7hk/Hmm2gEUNLpx5CZaefsFAAA/watch?utm_content=DAFlfg8t7hk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
                 target="_blank">前往作品</a>
         </button></div>
-            <p>我參與357小時課程，學習HTML, CSS, JavaScript製作網頁、Python、Mysql、區塊鏈、AI等課程，此外，我擔任組長，與四位組員一起完成金融功能開發專題，我負責主持每次報告討論、規劃時程進度、發想策略及規劃功能流程，並用Python、HTML、CSS寫功能、連線資料庫Mysql、串連Line
-                bot呈現。
+            <p>培訓357小時，學習網頁、Python、資料庫、區塊鏈、AI，專題擔任組長，洞察到顧客在自動扣款支出管理的痛點及創新子帳戶功能，用 HTML, CSS, JavaScript, Python, Mysql, Line Bot開發功能，此外，掌控時程，且定期小組會議，確保大家做的功能無誤，最終與四位團員分工合作，在一個月內完成功能開發。
             </p>
             </p>
         </div>
@@ -548,7 +556,7 @@
             <p>我已修習約21小時FB、Google Ads廣告投放課程，學習投放廣告方法、受眾選擇、廣告內容撰寫、數據分析、優化廣告、投放廣告應注意事項等技能，並實務投放FB、Google Ads廣告，成效優於平均水準。
             </p>
         </div>
-        <div class=ad>
+        <div class=ad id="ad1">
             <img src="./imgs/google.png" alt="">
             <br><br>
             <h5>Google Analytics & Google Ads ＆ 基礎數位行銷認證</h5>
@@ -686,4 +694,3 @@
 </body>
 
 </html>
-
